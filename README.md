@@ -22,8 +22,7 @@ The service is designed to support batch ETL processes, rather than real-time st
 - **Batch ETL Process**: Efficient batch processing to extract, transform, and load data, ensuring travel platforms receive complete data sets.
 - **Serverless Architecture**: Utilizes serverless technologies to reduce infrastructure management, optimize costs, and allow for easy scalability.
 - **Caching Layer**: Implements an in-memory cache to speed up data retrieval and reduce load on the underlying database.
-
-
+- **Failure Handling with Kafka**: Integrates a Kafka-based message queue to ensure data is reliably processed and can be recovered in case of any failures during the ETL process.
 
 ## Technologies Used
 
@@ -34,6 +33,7 @@ The service is designed to support batch ETL processes, rather than real-time st
 - **ApsaraDB for Redis**: In-memory caching service to accelerate data retrieval.
 - **Object Storage Service (OSS)**: Scalable storage for data.
 - **API Gateway**: Provides secure and scalable access to the RESTful API.
+- **Message Queue for Apache Kafka (MQ for Apache Kafka)**: Managed Kafka service for handling data ingestion and ensuring reliability in case of failures.
 
 ### AWS
 - **Lambda**: Serverless compute service for running the ETL process.
@@ -42,6 +42,8 @@ The service is designed to support batch ETL processes, rather than real-time st
 - **ElastiCache for Redis**: In-memory caching service to accelerate data retrieval.
 - **S3**: Scalable storage service for data.
 - **API Gateway**: Provides secure and scalable access to the RESTful API.
+- **Amazon Managed Streaming for Apache Kafka (MSK)**: Managed Kafka service for handling data ingestion and ensuring reliability in case of failures.
+
 
 ## Future Directions
 
