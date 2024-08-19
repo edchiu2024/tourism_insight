@@ -7,11 +7,6 @@ This project aims to develop a RESTful API service that aggregates various trave
 The service is designed to support batch ETL processes, rather than real-time streaming, as latency is not a concern for this particular use case. The goal is to leverage as many serverless technologies as possible, minimizing operational overhead and making the service easily scalable in the future. This project explores the implementation of the service using both Alibaba Cloud and AWS.
 
 ## System Diagram
-
-### Alibaba Cloud Version
-![image](https://github.com/user-attachments/assets/ecf479a5-61a8-4eb1-8a60-d210d92d643f)
-
-
 ### AWS Version
 ![image](https://github.com/user-attachments/assets/6fd7fcad-aca8-48eb-9472-4033e930ef9a)
 
@@ -25,15 +20,6 @@ The service is designed to support batch ETL processes, rather than real-time st
 - **Failure Handling with Kafka**: Integrates a Kafka-based message queue to ensure data is reliably processed and can be recovered in case of any failures during the ETL process.
 
 ## Technologies Used
-
-### Alibaba Cloud
-- **Function Compute**: Serverless compute service for executing the ETL process.
-- **Data Integration**: Tool for managing the ETL workflow and data transformations.
-- **ApsaraDB**: Managed database service for storing the processed data.
-- **ApsaraDB for Redis**: In-memory caching service to accelerate data retrieval.
-- **Object Storage Service (OSS)**: Scalable storage for data.
-- **API Gateway**: Provides secure and scalable access to the RESTful API.
-- **Message Queue for Apache Kafka (MQ for Apache Kafka)**: Managed Kafka service for handling data ingestion and ensuring reliability in case of failures.
 
 ### AWS
 - **Lambda**: Serverless compute service for running the ETL process.
