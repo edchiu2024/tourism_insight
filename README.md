@@ -4,7 +4,7 @@
 
 This project aims to develop a RESTful API service that aggregates various travel-related signals and transforms them into a unified format. The service allows travel platforms to retrieve all relevant data in a single request, simplifying the integration process and ensuring that they have access to comprehensive datasets.
 
-The service is designed to support batch ETL processes, rather than real-time streaming, as latency is not a concern for this particular use case. The goal is to leverage as many serverless technologies as possible, minimizing operational overhead and making the service easily scalable in the future. This project explores the implementation of the service using both Alibaba Cloud and AWS.
+The service is designed to support batch ETL processes, rather than real-time streaming, as latency is not a concern for this particular use case. The goal is to leverage as many serverless technologies as possible, minimizing operational overhead and making the service easily scalable in the future. This project explores the implementation of the service using AWS.
 
 ## System Diagram
 ### AWS Version
